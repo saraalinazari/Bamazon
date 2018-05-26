@@ -1,3 +1,6 @@
+#Bamazon
+* In this activity, I created an online store called Bamazon. This store has tje inventory database. All product information is stored on MYSQL database. Through bamazonCustomer.js, customer can see the list of product and then enter the id and the quantity that he wants. The application would check the inventory from database if there is enough, then it issues the bill and subtract the requested quantity from the number of same product item in stock. It updates database by new requests. 
+
 # bamazonCustomer.js
 * This page shows list of products to the customers and ask them to insert the id of the product that they want to buy.
 * In order to see the results, you need to type the command below in your command line after you change your current directory to the same local directory that you pulled the git hub repository :
@@ -44,3 +47,8 @@ Then user should insert the data about new department.
 You can see the screenshot of department table after adding new department with name: dep1 and costs:3000 in the following image:
 ![Alt Text](/images/bamazonSupervisor6.jpg)
 * If user selects <Finish>, then it ends the connection
+
+# Prerequisites
+ * Download Chrome or Internet Explorer or Mozilla for your specific operating system.
+ * Check if you have Node installed by typing  'node -v' in your terminal. If it returns anything related to version then you have it installed.
+ * You need MySQL on your system. Also, if you are Mac user you need to install SquelPro. If you are Windows User, you would need MySQL Workbench.
