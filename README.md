@@ -1,10 +1,10 @@
-#Bamazon
+# Bamazon
 
 ## Requirement
-- Creatie an Amazon-like storefront with the MySQL skills.
+- Create an Amazon-like storefront with the MySQL skills.
 - The app will take in orders from customers and deplete stock from the store's inventory. 
 - Track product sales across store's departments.
-- provide a summary of the highest-grossing departments in the store.
+- Provide a summary of the highest-grossing departments in the store.
 
 
 ## Instructions
