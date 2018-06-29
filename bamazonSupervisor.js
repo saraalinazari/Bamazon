@@ -19,14 +19,12 @@ var bamazonSupervisor={
             var departmentName = answer.departmentName;
             var overHeadCosts = answer.overHeadCosts;
             newDepartment(departmentName,overHeadCosts);
-            //bamazonSupervisor.showMenu();
+            
         }).then(function(){
             bamazonSupervisor.showMenu();
         });
     },
-    // viewtable: function(){
-    //     bamazonSupervisor.showMenu();
-    // },
+    
     showMenu: function(){
         inquirer.prompt([
             {
@@ -43,13 +41,13 @@ var bamazonSupervisor={
                 case "View Product Sales by Department":
                     console.log(answer.whattodo);
                     productSalesByDepartments();
-                   // bamazonSupervisor.viewtable();
+                   
                     bamazonSupervisor.showMenu();
-                   // endConnection();
+                   
                     break;
                 case "Create New Department":
                     bamazonSupervisor.insertDepartmentInfo();
-                    //endConnection();
+                    
                     break;
                 case "Finish":
                     endConnection();
@@ -57,24 +55,9 @@ var bamazonSupervisor={
 
             
             }
-        //    console.log(answer);
-        //     if(answer.whattodo =="View Product Sales by Department"){
-        //         console.log(answer.whattodo);
-        //         productSalesByDepartments();
-        //         bamazonSupervisor.showMenu();
-        //     }
-        //     if(answer.whattodo =="Create New Department"){
-        //         bamazonSupervisor.insertDepartmentInfo();
-                
-        //     }
-        //     if(answer.whattodo =="Finish"){
-        //         endConnection();
-        //     }
-          //  bamazonSupervisor.showMenu();
+        
         });
-        // .then(function(){
-        //     bamazonSupervisor.showMenu();
-        // });
+        
     }
 }
 bamazonSupervisor.showMenu();

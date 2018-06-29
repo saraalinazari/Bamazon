@@ -7,7 +7,7 @@ var buyingProcess={
     productID:0,
     showAll: function(){
         showItems();
-        //buyingProcess.getInput();
+        
     },
     getInput: function(){
         inquirer.prompt([
@@ -22,36 +22,23 @@ var buyingProcess={
                type: "input"
            }
        ]).then(function(answer){
-          // console.log("hhgh");
-          // console.log(answer);
+         
            buyingProcess.productID = answer.productID;
-         //  console.log(buyingProcess.productID);
+        
            buyingProcess.quantityReq = answer.quantity;
-          // console.log(buyingProcess.quantityReq);
+          
            buyingProcess.checkavailability();
-       });//  console.log("in getinput");
+       });
     },
     checkavailability: function(){
         
         var product;
         product =selectByID(this.productID,this.quantityReq);
-       // endConnection();
-       // console.log("in checkavailablity");
-       // var availableQuantity = product.stock_quantity;
-        // console.log("in check*****");
-        // console.log(product);
-       // console.log(availableQuantity);
+       
         
     }
 }
 buyingProcess.showAll();
-//showItems();
-// var getinput = showItems();
-// if(getinput){
-//     console.log(getinput.toString());
-// //setTimeout(buyingProcess.getInput, 1000);
-buyingProcess.getInput();
- //}
 
-//console.log("after input");
-//buyingProcess.checkavailability();
+buyingProcess.getInput();
+ 
